@@ -5,22 +5,22 @@
   
 
   
-  <title>Hexo Markdown 简明语法手册 | MTX.Space</title>
+  <title>初识Go | MTX.Space</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录一些markdown语法和hexo文章头的配置项">
-<meta name="keywords" content="Markdown">
+  <meta name="description" content="简要梳理Go的基本概念">
+<meta name="keywords" content="Go">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo Markdown 简明语法手册">
-<meta property="og:url" content="http://yoursite.com/2019/10/01/Hexo Markdown 简明语法手册/index.html">
+<meta property="og:title" content="初识Go">
+<meta property="og:url" content="http://yoursite.com/2019/10/15/初识Go/index.html">
 <meta property="og:site_name" content="MTX.Space">
-<meta property="og:description" content="记录一些markdown语法和hexo文章头的配置项">
+<meta property="og:description" content="简要梳理Go的基本概念">
 <meta property="og:locale" content="zh">
-<meta property="og:image" content="https://titangene.github.io/images/cover/hexo.jpg">
-<meta property="og:updated_time" content="2019-10-14T06:42:34.000Z">
+<meta property="og:image" content="https://i.dyt3.cc/08/8d/07/b8/bd/2a/80/b1/54/9a/a9/9b/f4/1e/35/d7.jpg">
+<meta property="og:updated_time" content="2019-10-15T09:35:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo Markdown 简明语法手册">
-<meta name="twitter:description" content="记录一些markdown语法和hexo文章头的配置项">
-<meta name="twitter:image" content="https://titangene.github.io/images/cover/hexo.jpg">
+<meta name="twitter:title" content="初识Go">
+<meta name="twitter:description" content="简要梳理Go的基本概念">
+<meta name="twitter:image" content="https://i.dyt3.cc/08/8d/07/b8/bd/2a/80/b1/54/9a/a9/9b/f4/1e/35/d7.jpg">
   
     <link rel="alternate" href="/atom.xml" title="MTX.Space" type="application/atom+xml">
   
@@ -67,10 +67,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Hexo Markdown 简明语法手册" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-初识Go" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/10/01/Hexo Markdown 简明语法手册/" class="article-date">
-  <time datetime="2019-10-01T14:00:00.000Z" itemprop="datePublished">2019-10-01</time>
+    <a href="/2019/10/15/初识Go/" class="article-date">
+  <time datetime="2019-10-15T14:22:00.000Z" itemprop="datePublished">2019-10-15</time>
 </a>
     
   <div class="article-category">
@@ -83,8 +83,8 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="https://titangene.github.io/images/cover/hexo.jpg" rel="gallery_ck1q4a5ww00001docyexc85mo">
-        <img src="https://titangene.github.io/images/cover/hexo.jpg" itemprop="image">
+      <a class="article-gallery-img fancybox" href="https://i.dyt3.cc/08/8d/07/b8/bd/2a/80/b1/54/9a/a9/9b/f4/1e/35/d7.jpg" rel="gallery_ck1rgl5bh00000focw42gt3dz">
+        <img src="https://i.dyt3.cc/08/8d/07/b8/bd/2a/80/b1/54/9a/a9/9b/f4/1e/35/d7.jpg" itemprop="image">
       </a>
     
   </div>
@@ -95,7 +95,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo Markdown 简明语法手册
+      初识Go
     </h1>
   
 
@@ -103,25 +103,35 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>记录一些markdown语法和hexo文章头的配置项</p>
+        <p>简要梳理Go的基本概念</p>
 <a id="more"></a>
 
-<h3 id="文章头格式"><a href="#文章头格式" class="headerlink" title="文章头格式"></a>文章头格式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo Markdown 简明语法手册</span><br><span class="line">date: 2019-10-14 14:00:00</span><br><span class="line">tags: [Markdown]</span><br><span class="line">categories: 学习</span><br><span class="line">photos: https://titangene.github.io/images/cover/hexo.jpg</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="程序结构"><a href="#程序结构" class="headerlink" title="程序结构"></a>程序结构</h2><hr>
+<h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><p>var、const、type和func，分别对应变量、常量、类型和函数实体对象</p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p><code>var 变量名字 类型 = 表达式</code> 其中“类型”或“= 表达式”两个部分可以省略其中的一个</p>
+<p><code>名字 := 表达式</code> 为简短变量声明语句</p>
+<p><code>nil</code> 为空值</p>
+<h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><p>取变量地址符号：<code>&amp;</code></p>
+<p>读地址变量符号：<code>*</code></p>
+<p>指针是带有数据类型变量</p>
+<h3 id="new函数"><a href="#new函数" class="headerlink" title="new函数"></a>new函数</h3><p><code>new(T)</code>将创建一个T类型的匿名变量</p>
+<hr>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><hr>
+<h3 id="默认大小"><a href="#默认大小" class="headerlink" title="默认大小"></a>默认大小</h3><p><code>int</code> <code>uint</code> <code>float</code> `` 由平台决定大小(32bit or 64bit)</p>
+<h3 id="运算符-amp-优先级"><a href="#运算符-amp-优先级" class="headerlink" title="运算符&amp;优先级"></a>运算符&amp;优先级</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*      /      %      &lt;&lt;       &gt;&gt;     &amp;       &amp;^</span><br><span class="line">+      -      |      ^</span><br><span class="line">==     !=     &lt;      &lt;=       &gt;      &gt;=</span><br><span class="line">&amp;&amp;</span><br><span class="line">||</span><br></pre></td></tr></table></figure>
 
-<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p><em>斜体</em>：<code>*斜体*</code></p>
-<p><strong>粗体</strong>：<code>**粗体**</code></p>
-<p><del>删除线</del>：<code>~删除线~</code></p>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>文字超链接：<code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
-<p>图片超链接：<code>![图片说明](图片链接 &quot;图片标题&quot;)</code></p>
-<h3 id="只展示摘要"><a href="#只展示摘要" class="headerlink" title="只展示摘要"></a>只展示摘要</h3><p>摘要与正文之间添加：<code>&lt;!-- more --&gt;</code></p>
+<h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><p><code>int8</code> <code>int16</code> <code>int32</code> <code>int64</code> <code>uint8</code> <code>uint16</code> <code>uint32</code> <code>uint64</code></p>
+<h3 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h3><p><code>float32</code> 约10进制6位精度<br><code>float64</code> 约10进制15位精度<br>除0不会报错，返回<code>math.NaN</code><br><code>math.NaN</code><strong>只能</strong>用<code>math.IsNaN</code>函数判断(nan != nan)</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>参考：<a href="https://books.studygolang.com/gopl-zh/" target="_blank" rel="noopener">Go语言圣经</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/01/Hexo Markdown 简明语法手册/" data-id="ck1q4a5ww00001docyexc85mo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/15/初识Go/" data-id="ck1rgl5bh00000focw42gt3dz" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/">Go</a></li></ul>
 
     </footer>
   </div>
@@ -129,15 +139,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/10/12/旅行随笔/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          旅行随笔--美林谷
-        
-      </div>
-    </a>
   
+    <a href="/2019/10/15/V2Ray/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">V2Ray</div>
+    </a>
   
 </nav>
 
